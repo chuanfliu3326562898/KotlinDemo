@@ -28,7 +28,8 @@ fun parseInt(str: String): Int? {
     // ……
     var a = Integer.parseInt(str)
     println("parse int $a")
-    return null
+//    return null
+    return a
 }
 
 fun printProduct(arg1: String, arg2: String) {
@@ -53,6 +54,7 @@ fun printProduct2(arg1: String, arg2: String) {
         println("Wrong number format in arg1: '$arg1'")
         return
     }
+
     if (y == null) {
         println("Wrong number format in arg2: '$arg2'")
         return
@@ -225,7 +227,7 @@ fun checkInterval(){
         print(x)
     }
     println()
-    for (i in 1 until 10) {       // i in [1, 10), 10被排除
+    for (i in (1 until 10 ).reversed()) {       // i in [1, 10), 10被排除
         print(i)
     }
 
